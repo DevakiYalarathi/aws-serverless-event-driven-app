@@ -1,24 +1,6 @@
-name: Lambda CI/CD Pipeline
-
 on:
   push:
     branches:
       - main
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
-
-    - name: Zip Lambda Function
-      run: |
-        zip lambda_function.zip lambda_function.py
-
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: lambda-zip
-        path: lambda_function.zip
