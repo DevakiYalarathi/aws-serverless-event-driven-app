@@ -49,3 +49,4 @@ The Lambda function uses an IAM role with AmazonS3ReadOnlyAccess policy to secur
 
 ## 📊 Monitoring
 All execution logs are captured in CloudWatch, allowing real-time monitoring and troubleshooting of the application.
+trigger
